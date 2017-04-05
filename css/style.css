@@ -25,7 +25,7 @@ body {
 }
 
 #navbar a:hover{
-  background-color: white;
+  background-color: transparent;
   color: #2a9fd6;
 }
 
@@ -68,7 +68,7 @@ body {
   width: 100%;
 }
 
-.about-short {
+.panel {
   margin-top: 200px;
   margin-bottom: 150px;
 }
@@ -89,4 +89,8 @@ body {
 
 .footer a:hover {
   color: #2a9fd6;
+}
+
+#footer-text {
+  margin-bottom: 25px;
 }
