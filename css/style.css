@@ -4,56 +4,98 @@ html {
 }
 
 body {
+  padding-top: 75px;
   font-family: 'Raleway', sans-serif;
+}
+
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.navbar-default {
+  border-color: black;
+}
+
+.navbar.navbar-default .navbar-collapse {
+  border-color: black;
+}
+
+#nav-container a {
+  font-size: 1em;
+  color: black;
 }
 
 #nav-container a:hover {
   color: #2a9fd6;
 }
 
-#nav-container a {
-  color: black;
-}
-
-.navbar-header {
-  height: auto;
-  padding: 1%;
-}
-
-.navbar-toggle {
-  color: black;
-}
-
-#navbar {
+.nav {
   padding: 1.5%;
 }
 
-#navbar a:hover{
-  background-color: transparent;
-  color: #2a9fd6;
+.navbar-toggle {
+  margin: 1.5%;
 }
 
-
 #icon-text {
-  font-size: 1.5em;
-  margin: 12px;
+  margin: 8px;
   float: right;
 }
 
+
 #main-icon {
   float: left;
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
 }
 
 #header-name {
-  font-size: 5em;
+  font-size: 3.5em;
   margin: 0;
 }
 
 #header-subtext {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin: 0;
+}
+
+@media (min-width: 760px) {
+  #icon-text {
+    font-size: 1em;
+    margin: 16px;
+    float: right;
+  }
+
+  #main-icon {
+    margin-top:5px;
+    float: left;
+    width: 42px;
+    height: 42px;
+  }
+
+  #header-name {
+    font-size: 5em;
+    margin: 0;
+  }
+
+  #header-subtext {
+    font-size: 2.5em;
+    margin: 0;
+  }
 }
 
 #particles-js p {
@@ -62,20 +104,29 @@ body {
 
 #particles-js {
   height: 300px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-top: 25px;
+  position: fixed;
 }
 
 .particle-container {
   font-family: inherit;
-  color: white;
+  color: black;
   text-align: center;
   position: relative;
-  top: 60%;
   width: 100%;
+  padding-top: 75px;
 }
 
 .panel {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 150px;
+}
+
+#panel-image {
+  height: 300px;
+  width: 200px;
 }
 
 .footer {
