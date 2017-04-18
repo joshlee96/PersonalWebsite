@@ -22,13 +22,17 @@
   <meta name="description" content="Personal Website">
   <link rel="stylesheet" href="https://bootswatch.com/simplex/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default">
     <div class="container" id="nav-container">
       <div class="navbar-header">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
@@ -36,11 +40,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><img src="assets/favicon.ico" id="main-icon"><p id="icon-text">Home</p></img></a>
+        <a class="navbar-brand" href="https://joshlee96.github.io/PersonalWebsite/"><img src="assets/favicon.ico" id="main-icon"><p id="icon-text">Home</p></img></a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="text-center"><a href="/resume.pdf">Resume</a></li>
+          <li class="text-center"><a href="https://joshlee96.github.io/PersonalWebsite/Resume.pdf">Resume</a></li>
           <li class="text-center"><a class="page-scroll" href="#footer">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -48,31 +52,85 @@
   </nav>
 
   <div id="particles-js">
-  </div>
-  <div class="particle-container animated fadeInDown">
-    <p id="header-name">Joshua Lee</p>
-    <p id="header-subtext">Computer Engineer | Software Developer</p>
-  </div>
-
-  <div class="panel panel-default col-lg-12">
-    <div class="panel-heading"><h3>About</h3></div>
-    <div class="panel-body">
-      <!-- <a href="assets/photo1.jpg" rel="lightbox" title="Me and my friends" /><img src="assets/photo1.jpg" id="panel-image"/></a> -->
-      <p>Hello World! My name is Josh Lee and I'm a second year Computer Engineering student at the University of Waterloo.
-      Although subject to change, I am currently interested in machine learning, computer architecture, emerging developer tools
-      and basketball (the Warriors blew a 3-1 lead).
-
-      <a href='views/about.html'>extended biography...</a>
-      I've always been intruiged by technology in one way or another. As a child, I would often sit on my living room couch
-      watching How It's Made with a bag of Lays ketchup chips by my side.
-      So did such an unguided how did I end up in the field of Computer Science? I remember being appaled and overwhelmed by the idea of having
-      to decide what I want do for the rest life at the age of 17. So I took a gambit; I was strong in mathematics,
-      and enjoyed spending my free time on the computer. After putting two and two together, I wasn't a coding prodigy who managed to learn eight
-       different languages by the age of 15. </p>
+    <div class="particle-container animated fadeInDown">
+      <p id="header-name">Joshua Lee</p>
+      <p id="header-subtext">Computer Engineer | Software Developer</p>
     </div>
   </div>
 
-    <footer class="footer" id="footer">
+  <div class="content-container">
+
+    <div class="about-section">
+      <h2 class="section-header">About Me</h2>
+      <!-- <a href="assets/photo1.jpg" rel="lightbox" title="Me and my friends" /><img src="assets/photo1.jpg" id="panel-image"/></a> -->
+      <p>Hello World! My name is Josh Lee and I'm a second year Computer Engineering student at the University of Waterloo.
+      Although subject to change, I currently possess interests in machine learning, computer architecture, and computer security.
+      During the past year I've interned as a software developer at both TD Labs and D2L. I've had the pleasure of working under and alongside brilliant
+      individuals who have guided me in becoming a more well equipped, ambitious developer.  I am currently seeking internship opportunities
+      for Fall 2017.  Feel free to contact me at <a href="mailto:joshkyunghyunlee@gmail.com">joshkyunghyunlee@gmail.com</a>.</p>
+    </div>
+
+    <div class="timeline-section">
+      <h2 class="section-header">Timeline</h2>
+      <section id="cd-timeline" class="cd-container">
+    		<div class="cd-timeline-block">
+    			<div class="cd-timeline-img">
+    				<img src="./assets/td-icon.png">
+    			</div> <!-- cd-timeline-img -->
+
+    			<div class="cd-timeline-content">
+    				<h2>TD Labs</h2>
+    				<p>Solutions Developer - Kitchener, Ontario</p>
+    				<span class="cd-date">May 2016 - Aug 2016</span>
+    			</div> <!-- cd-timeline-content -->
+    		</div> <!-- cd-timeline-block -->
+
+    		<div class="cd-timeline-block">
+    			<div class="cd-timeline-img">
+    				<img src="./assets/d2l-icon.png">
+    			</div> <!-- cd-timeline-img -->
+
+    			<div class="cd-timeline-content">
+    				<h2>D2L</h2>
+    				<p>Software Engineering Intern - Toronto, Ontario</p>
+    				<span class="cd-date">Jan 2017 - Present</span>
+    			</div> <!-- cd-timeline-content -->
+    		</div> <!-- cd-timeline-block -->
+    	</section> <!-- cd-timeline -->
+    </div>
+
+    <div class="projects-section">
+      <h2 class="section-header">Projects</h2>
+      <div class="row">
+        <div class="project-block-light wow zoomIn col-lg-6">
+          <img class="landscape-image" src="https://joshlee96.github.io/assets/portfoliopublisher.png"/>
+          <a class="project-title" href="https://joshlee96.github.io/portfoliopublisher">Portfolio Publisher</a>
+          <p>Hello</p>
+        </div>
+        <div class="project-block-dark wow zoomIn col-lg-6">
+          <img class="portrait-image" src="https://joshlee96.github.io/assets/marshmallo.png"/>
+          <a class="project-title">Easy Manage</a>
+          <p>Hello</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="project-block-dark wow zoomIn col-lg-6">
+          <img class="portrait-image" src="https://joshlee96.github.io/assets/marshmallo.png"/>
+          <a class="project-title" href="https://joshlee96.github.io/portfoliopublisher">Marshmallo</a>
+          <p>Simple note-taking app with CRUD capabilities</p>
+        </div>
+        <div class="project-block-light wow zoomIn col-lg-6">
+          <img class="landscape-image" src="https://joshlee96.github.io/assets/UWRedditBot.png"/>
+          <a class="project-title">UWaterloo Reddit Bot</a>
+          <p>Hello</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer" id="footer">
     <div class="container text-center">
       <a href="https://facebook.com/josh.lee.92754397"><i class="fa fa-facebook-official fa-2x"></i></a>
       <a href="mailto:joshkyunghyunlee@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
@@ -88,6 +146,5 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
  <script src="https://use.fontawesome.com/1bab97fff1.js" defer></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js" defer/></script>
  <script src="js/main.js" defer></script>
  </html>

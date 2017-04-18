@@ -4,10 +4,16 @@ html {
 }
 
 body {
-  padding-top: 75px;
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: #2a9fd6;
+}
+
+p {
+  font-size: 15px;
+}
 
 .navbar-default .navbar-toggle {
   border-color: transparent;
@@ -27,7 +33,7 @@ body {
 }
 
 .navbar.navbar-default {
-  border-color: black;
+  border-bottom: 1px solid black;
 }
 
 .navbar.navbar-default .navbar-collapse {
@@ -35,7 +41,7 @@ body {
 }
 
 #nav-container a {
-  font-size: 1em;
+  font-size: 1.25em;
   color: black;
 }
 
@@ -47,20 +53,17 @@ body {
   padding: 1.5%;
 }
 
-.navbar-toggle {
-  margin: 1.5%;
-}
-
 #icon-text {
-  margin: 8px;
+  margin-left: 8px;
   float: right;
 }
 
 
 #main-icon {
   float: left;
-  width: 32px;
-  height: 32px;
+  margin-top: -5px;
+  width: 25px;
+  height: 25px;
 }
 
 #header-name {
@@ -76,24 +79,24 @@ body {
 @media (min-width: 760px) {
   #icon-text {
     font-size: 1em;
-    margin: 16px;
+    margin: 14px;
     float: right;
   }
 
   #main-icon {
-    margin-top:5px;
+    margin: 4px;
     float: left;
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
   }
 
   #header-name {
-    font-size: 5em;
+    font-size: 4.5em;
     margin: 0;
   }
 
   #header-subtext {
-    font-size: 2.5em;
+    font-size: 2.25em;
     margin: 0;
   }
 }
@@ -103,32 +106,101 @@ body {
 }
 
 #particles-js {
-  height: 300px;
-  width: 100%;
   border-bottom: 1px solid black;
-  margin-top: 25px;
-  position: fixed;
+  height: 300px;
+  position: relative;
+  width: 100%;
 }
 
 .particle-container {
   font-family: inherit;
   color: black;
   text-align: center;
-  position: relative;
   width: 100%;
-  padding-top: 75px;
+  color: white;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
 }
 
-.panel {
-  margin-top: 150px;
-  margin-bottom: 150px;
+.content-container {
+  background-color: white;
+  height: 100%;
 }
 
-#panel-image {
-  height: 300px;
-  width: 200px;
+/* About Section */
+.about-section {
+  padding: 5%;
 }
 
+.section-header {
+  margin-bottom: 25px;
+}
+
+.about-section a:hover {
+  color: #2a9fd6;
+}
+
+/* Timeline Section */
+.timeline-section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 5%;
+  margin-bottom: 100px;
+}
+
+.project-block-dark {
+  background-color: #333333;
+  text-align: center;
+  border: 1px solid black;
+  color: #EEEEEE;
+  height: 700px;
+}
+
+.project-block-light {
+  background-color: #FFFFFF;
+  text-align: center;
+  border: 1px solid black;
+  color: #000000;
+  height: 700px;
+}
+
+.projects-section img {
+  display:block;
+  margin:auto;
+  padding: 10%;
+}
+
+.portrait-image {
+  max-height: 60rem;
+}
+
+.landscape-image {
+  max-height: 60rem;
+  max-width: 100%;
+}
+
+.projects-section a {
+  font-size: 1.75em;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.projects-section a:hover {
+  color: #2a9fd6;
+}
+
+@ media (min-width: 760px) {
+}
+
+/* Footer */
 .footer {
   position: absolute;
   bottom: 0;
