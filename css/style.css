@@ -30,6 +30,8 @@ p {
 
 .navbar {
   background-color: transparent;
+  padding-left: 3.5%;
+  padding-right: 4%;
 }
 
 .navbar.navbar-default {
@@ -49,15 +51,10 @@ p {
   color: #2a9fd6;
 }
 
-.nav {
-  padding: 1.5%;
-}
-
 #icon-text {
   margin-left: 8px;
   float: right;
 }
-
 
 #main-icon {
   float: left;
@@ -71,23 +68,33 @@ p {
   margin: 0;
 }
 
+#header-symbol {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 100em;
+}
+
 #header-subtext {
   font-size: 1.5em;
   margin: 0;
 }
 
 @media (min-width: 760px) {
+  .nav,
+  .navbar-header {
+    margin-top: 1.0%;
+    margin-bottom: 1.0%;
+  }
+
   #icon-text {
     font-size: 1em;
-    margin: 14px;
-    float: right;
+    padding-left: 10px;
   }
 
   #main-icon {
-    margin: 4px;
-    float: left;
     width: 36px;
     height: 36px;
+    margin-top: -10px;
   }
 
   #header-name {
@@ -119,7 +126,7 @@ p {
   width: 100%;
   color: white;
   position: absolute;
-  top: 75px;
+  top: 50px;
   left: 0;
   width: 100%;
 }
@@ -171,30 +178,33 @@ p {
 }
 
 .projects-section img {
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   padding: 10%;
 }
 
 .portrait-image {
-  max-height: 60rem;
+  max-height: 50rem;
 }
 
 .landscape-image {
-  max-height: 60rem;
+  max-height: 50rem;
   max-width: 100%;
 }
 
-.projects-section a {
-  font-size: 1.75em;
-}
-
 .project-title {
+  font-size: 1.75em;
   text-align: center;
 }
 
 .projects-section a:hover {
   color: #2a9fd6;
+}
+
+.projects-section p {
+  margin-top: 2.5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @ media (min-width: 760px) {
