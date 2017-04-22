@@ -3,6 +3,18 @@ jQuery(document).ready(function($) {
     console.log('callback - particles.js config loaded');
   });
 
+  // jQuery page scrolling feature using Easing plugin
+  $('a.page-scroll').bind('click', function (event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+  });
+
+  // Initialize WOW.js Scrolling Animations
+  new WOW().init();
+
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
