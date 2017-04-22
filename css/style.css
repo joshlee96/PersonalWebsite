@@ -155,6 +155,12 @@ p {
   padding-right: 5%;
 }
 
+.cd-timeline-content ul {
+  list-style-position: outside;
+  padding-left: 1em;
+}
+
+
 /* Projects Section */
 .projects-section {
   padding: 5%;
