@@ -40,12 +40,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://joshlee96.github.io/PersonalWebsite/"><img src="assets/favicon.ico" id="main-icon"/><p id="icon-text">Home</p></a>
+        <a class="navbar-brand" href="http://joshlee96.github.io/PersonalWebsite/"><img src="./assets/favicon.ico" id="main-icon"/><p id="icon-text">Home</p></a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://joshlee96.github.io/PersonalWebsite/Resume.pdf">Resume</a></li>
-          <li><a class="page-scroll" href="#footer">Contact</a></li>
+          <li class="text-center"><a href="http://joshlee96.github.io/PersonalWebsite/Resume.pdf">Resume</a></li>
+          <li class="text-center"><a class="page-scroll" href="#footer">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -87,9 +87,9 @@
                 prototypes while maintaining user centric design </li>
               <li> Developed application for the <b>Microsoft HoloLens</b> using Unity3D, HoloToolKit and Blender3D </li>
               <li> Wrote a <b>singleton cache</b> which was used to store persistent data, decreasing memory usage by over <b>200%</b> </li>
-              <li> Utilized <b>spatial mapping</b> to generate a mesh of by scanning the surrounding environment</li>
+              <li> Utilized the HoloLens <b>spatial mapping</b> capability to generate a mesh of the surrounding environment</li>
             </ul>
-            <span class="cd-date">May 2016 - Aug 2016</span>
+            <span class="cd-date"><p>May 2016 - Aug 2016</p></span>
 
     			</div> <!-- cd-timeline-content -->
     		</div> <!-- cd-timeline-block -->
@@ -104,13 +104,12 @@
     				<p>Software Engineering Intern - Toronto, Ontario</p>
             <ul>
               <li> Restructured <b>Mongoose</b> schemas to reduce memory usage consumed by server by over <b>125%</b> </li>
-              <li> natural language processing engine provided by wit.ai </li>
               <li> Implemented a token based authentication service following the <b>OAuth 2.0 protocol</b>, all encompased in an InAppBrowser.
               <li> Wrote unit regression tests using the Mocha testing suite</li>
               <li> Developed a cross-platform mobile application leveraging the Ionic framework alongside the use of Cordova plugins; enabling
               native capabilities</li>
             </ul>
-            <span class="cd-date">Jan 2017 - Present</span>
+            <span class="cd-date"><p>Jan 2017 - Present</p></span>
     			</div> <!-- cd-timeline-content -->
     		</div> <!-- cd-timeline-block -->
     	</section> <!-- cd-timeline -->
@@ -119,11 +118,6 @@
     <div class="projects-section">
       <h2 class="section-header">Projects</h2>
       <div class="row">
-        <div class="project-block-light wow zoomIn col-lg-6">
-          <img class="landscape-image" src="http://joshlee96.github.io/PersonalWebsite/assets/PortfolioPublisher.png"/>
-          <a class="project-title" href="http://joshlee96.github.io/PersonalWebsite/PortfolioPublisher">Portfolio Publisher</a>
-          <p>Hello</p>
-        </div>
         <div class="project-block-dark wow zoomIn col-lg-6">
           <img class="portrait-image" src="http://joshlee96.github.io/PersonalWebsite/assets/EasyManage1.png"/>
           <img class="portrait-image" src="http://joshlee96.github.io/PersonalWebsite/assets/EasyManage2.png"/>
@@ -132,9 +126,21 @@
           users to group their tasks under a single category.  Easy Manage also allows users to create task groups with their friends!  It uses
           <a href="https://realm.io/">Realm</a> to store persistent client-side data and leverages a Node.js and MongoDB backend.</p>
         </div>
+        <div class="project-block-light wow zoomIn col-lg-6">
+          <img class="landscape-image" src="http://joshlee96.github.io/PersonalWebsite/assets/PortfolioPublisher.png"/>
+          <a class="project-title" href="http://joshlee96.github.io/PersonalWebsite/PortfolioPublisher">Portfolio Publisher</a>
+          <p>Portfolio Publisher is a JavaScript web app which leverages Facebook, LinkedIn, and Github APIs to produce software portfolios. </p>
+        </div>
       </div>
 
       <div class="row">
+        <div class="project-block-light wow zoomIn col-lg-6">
+          <img class="landscape-image" src="http://joshlee96.github.io/PersonalWebsite/assets/UWRedditBot.png"/>
+          <a class="project-title" href="http://github.com/joshlee96/RedditBot">UWaterloo Reddit Bot</a>
+          <p>UW Reddit Bot was developed during EngHack 2016 at the University of Waterloo. The bot leverages
+          PRAW (Python Reddit API Wrapper) to retrieve data from the UWaterloo subreddit. When certain keywords are detected, the bot will
+          automatically respond with a formatted message relating to the topic. </p>
+        </div>
         <div class="project-block-dark wow zoomIn col-lg-6">
           <img class="portrait-image" src="http://joshlee96.github.io/PersonalWebsite/assets/Marshmallo1.png"/>
           <img class="portrait-image" src="http://joshlee96.github.io/PersonalWebsite/assets/Marshmallo2.png"/>
@@ -142,14 +148,6 @@
           <p>Marshmallo is an Android application designed to store notes and memos. It utilizes Android's SQLite database implementation
           to store persistent data. The application has create, read, update and delete (CRUD) capabilities. Marshmallo follows Google's
           material design guidelines.</p>
-        </div>
-        <div class="project-block-light wow zoomIn col-lg-6">
-          <img class="landscape-image" src="http://joshlee96.github.io/PersonalWebsite/assets/UWRedditBot.png"/>
-          <a class="project-title" href="http://github.com/joshlee96/RedditBot">UWaterloo Reddit Bot</a>
-          <p>UW Reddit Bot was developed during EngHack 2016 at the University of Waterloo along with Leo Kim. The bot leverages
-          PRAW (Python Reddit API Wrapper) to parse the data associating with each post within the uwaterloo subreddit.
-          When certain keywords are detected, the bot will automatically respond with a formatted message relating to the topic.  For example, if "!advisor engineering"
-          is detected in the sentence, the bot will respond with a formatted list of engineering advisors and their contact information.</p>
         </div>
       </div>
     </div>

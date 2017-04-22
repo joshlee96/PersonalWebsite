@@ -188,10 +188,10 @@ header h1 {
 }
 
 .cd-timeline-content h2 {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   color: black;
 }
-.cd-timeline-content p {
+.cd-timeline-content ul {
   font-size: 1.4rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -208,6 +208,10 @@ header h1 {
   float: left;
   padding: .8em 0;
 }
+
+.cd-date p {
+  font-size: 1.3rem;
+}
 .cd-timeline-content::before {
   content: '';
   position: absolute;
@@ -220,13 +224,18 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
+  .cd-timeline-content ul,
   .cd-timeline-content p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+
+  .cd-date p {
+    font-size: 2rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1170px) {
