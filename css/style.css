@@ -190,17 +190,13 @@ p {
 
 .portrait-image {
   float: left;
-  width: 50%;
-  text-align: center;
-}
-
-.projects-section img {
-  margin: auto;
-  max-height: 50rem;
-  max-width: 100%;
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .landscape-image {
+  width: 90%;
   padding: 7.5%;
 }
 
@@ -214,7 +210,6 @@ p {
 }
 
 .projects-section p {
-  margin-top: 2.5%;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -227,6 +222,16 @@ p {
 
   .project-block-dark {
     height: 700px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .project-block-light {
+    height: 815px;
+  }
+
+  .project-block-dark {
+    height: 815px;
   }
 }
 
