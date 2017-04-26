@@ -215,7 +215,7 @@ p {
   margin-bottom: 10%;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 992px) {
   .project-block-light {
     height: 700px;
   }
