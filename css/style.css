@@ -227,11 +227,20 @@ p {
 
 @media (min-width: 1350px) {
   .project-block-light {
-    height: 815px;
+    height: 825px;
   }
 
   .project-block-dark {
-    height: 815px;
+    height: 825px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .project-block-light {
+    height: 950px;
+  }
+  .project-block-dark {
+    height: 950px;
   }
 }
 
